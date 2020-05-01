@@ -15,10 +15,11 @@ Features consist of hourly average ambient variables
 * Ambient Pressure (AP) in the range 992.89-1033.30 milibar,
 * Relative Humidity (RH) in the range 25.56% to 100.16%
 * Exhaust Vacuum (V) in teh range 25.36-81.56 cm Hg
-* Net hourly electrical energy output (PE) 420.26-495.76 MW The averages are taken from various sensors located around the plant that * * record the ambient variables every second.
+* Net hourly electrical energy output (PE) 420.26-495.76 MW 
+* The averages are taken from various sensors located around the plant that record the ambient variables every second.
 
 ___
-**Get the data here http://archive.ics.uci.edu/ml/datasets/Combined%20Cycle%20Power%20Plant
+**Get the data here http://archive.ics.uci.edu/ml/datasets/Combined%20Cycle%20Power%20Plant**
 ___
 ### Inference
 * The attributes Ambient Temperature , Ambient Pressure , Exhaust Vacuum directly influence the net hourly electric power output.
