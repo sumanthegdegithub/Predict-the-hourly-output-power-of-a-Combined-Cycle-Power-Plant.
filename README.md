@@ -27,8 +27,8 @@ ___
 ### Deployment
 Run these scripts in Anaconda prompt to run locally on your system.
 ~~~
-set FLASK_APP=Deployment-flask-master\app.py
-flask run
+$ set FLASK_APP=Deployment-flask-master\app.py
+$ flask run
 ~~~
 ![alt deployed image](deployed.png)
 
