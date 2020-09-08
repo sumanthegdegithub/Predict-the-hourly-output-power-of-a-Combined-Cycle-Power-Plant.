@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Energy output Prediction</title>
+<link rel="stylesheet" href="../static/css/style.css">
+  
+</head>
+
+<body>
+  <div style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px;">
+    <img src="https://corpwebstorage.blob.core.windows.net/media/32091/445-mw-konaseema-combined-cycle-power-plant-at-devarapalli-andhra-pradesh-india-2.jpg" style="width: 100%; height: 100%; opacity: 0.2;">
+  </div>
+ <div class="login">
+	<h1>Energy output Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="experience" placeholder="Temperature in °C" required="required" />
+        <input type="text" name="test_score" placeholder="Ambient Pressure (AP) in milibar" required="required" />
+		<input type="text" name="interview_score" placeholder="Relative Humidity (RH) in %" required="required" />
+    <input type="text" name="interview_scorer" placeholder="Exhaust Vacuum (V) in cm Hg" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large" style="color: black">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
