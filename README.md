@@ -1,6 +1,6 @@
 ## A machine learning approach to predict hourly output of a power plant 
 ___
-https://output-from-power-plant.herokuapp.com/
+Have a look here https://output-from-power-plant.herokuapp.com/
 ___
 In this project I have explored the data collected from a Combined Cycle Power Plant over 6 years.
 Searched for the best machine learning algorithm to predict the output. 
